@@ -1,9 +1,11 @@
 <!doctype html>
 
 <?php
-          $projectName= 'Projektova stranka!';
+          $projectName= 'stranka!';
+          $counter= 0;
           
   echo  $projectName;
+
 
 ?>
 <html lang="en">
@@ -26,7 +28,11 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#"><?php echo $projectName;?></a>
+      <a class="navbar-brand" href="#">
+        
+        <?php echo $projectName;?></a>
+      
+      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -63,8 +69,8 @@
       <div class="starter-template">
         <h1>
 
-        </h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        </h1> 
+        <p class="lead">pocitadlo pristupu  <?php echo $counter;?>  </p>
       </div>
 
     </main><!-- /.container -->
